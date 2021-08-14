@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="http://localhost:3000" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/web3.js"></script>
+    <style>
+        body{background-color: black;}
+        #wrapper{width: 70%;margin: auto;}
+        #header, #middle, #footer{background-color: azure; margin-bottom: 10px; padding:10px}
+        #header, #middle{text-align: center;}
+        #tb_Clients{width: 100%; }
+        #tb_Clients tr td{text-align: center;}
+        #row1 td{background-color: black; color: yellow; padding: 3px;}
+        .row td{border-bottom: solid 1px gainsboro; padding: 3px}
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+
+        <div id="header">
+            <button id="btn_connect_MM">Connect Metamask (Login)</button>
+            <h3>Welcome ...........</h3>
+        </div>
+        
+        <div id="middle">
+            <input type="text" id="txt_Money" placeholder="0 eth" />
+            <input type="text" id="txt_Content" placeholder="Lời nhắn" />
+            <input type="button" id="btn_Send" value="Send" />
+        </div>
+
+        <div id="footer">
+            <table id="tb_Clients">
+                <tr id="row1">
+                    <td>Address</td>
+                    <td>Money (ETH)</td>
+                    <td>Lời nhắn</td>
+                </tr>
+                <tr class="row">
+                    <td>0x.....</td>
+                    <td>0.34</td>
+                    <td>Cuối tuần vui vẽ nha!</td>
+                </tr>
+                <tr class="row">
+                    <td>0x.....</td>
+                    <td>0.34</td>
+                    <td>Cuối tuần vui vẽ nha!</td>
+                </tr>
+                <tr class="row">
+                    <td>0x.....</td>
+                    <td>0.34</td>
+                    <td>Cuối tuần vui vẽ nha!</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>
